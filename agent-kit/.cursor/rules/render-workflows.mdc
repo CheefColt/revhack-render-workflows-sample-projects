@@ -1,0 +1,14 @@
+---
+description: Decide which parts of a project should be Render Workflows tasks instead of API handlers or hand-built queues. Use for architecture questions about slow, multi-step, parallel or flaky work.
+alwaysApply: false
+---
+
+When the user asks whether or how to use Render Workflows, or when a project has slow, multi-step, parallel or flaky work:
+
+1. Read `skills/render-workflows-advisor/SKILL.md` and follow it. Load files from its `references/` folder only as needed.
+2. Audit first and report; do not edit code unless asked.
+3. For each process give one verdict: MOVE, KEEP, SPLIT, CRON + MOVE or SKIP, with file paths and reasons.
+4. Design one orchestrator task that fans out child tasks, catches child failures, and keeps arguments small.
+5. Do not claim runs resume after a crash, that retried parents skip finished children, or that tasks can stream to a browser, receive requests, or run on a built-in schedule. None of that is documented.
+6. Your Render Workflows SDK knowledge may be outdated. Verify against https://render.com/docs/workflows or the installed SDK, and use Render's `render-workflows` skill for implementation.
+7. The hackathon's $50 is Render credit only. AI provider APIs need the user's own key.

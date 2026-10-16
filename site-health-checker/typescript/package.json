@@ -1,0 +1,24 @@
+{
+  "name": "revhack-site-health-checker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Render Workflows starter: site reliability & health suite (TypeScript)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx main.ts",
+    "trigger": "tsx trigger.ts",
+    "test": "tsx --test test_main.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@renderinc/sdk": "^1.2.0",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^7.0.2"
+  }
+}

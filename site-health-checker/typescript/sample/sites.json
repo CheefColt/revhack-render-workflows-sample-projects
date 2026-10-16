@@ -1,0 +1,18 @@
+[
+  "https://github.com",
+  "https://render.com",
+  "https://wikipedia.org",
+  "https://cloudflare.com",
+  "https://google.com",
+  "https://microsoft.com",
+  "https://apple.com",
+  "https://mozilla.org",
+  "https://stackoverflow.com",
+  "https://developer.mozilla.org",
+  "https://httpbin.org/get",
+  "https://httpbin.org/delay/2",
+  "http://github.com",
+  "https://httpstat.us/404",
+  "https://this-domain-will-fail-dns-resolution-revhack.org",
+  "https://expired.badssl.com"
+]
